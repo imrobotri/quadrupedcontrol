@@ -10,10 +10,10 @@
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md",
         "QuadrupedControl.ts",
         "Control.ts",
-        "_locales/zh-CN/quadrupedcontrol-strings.json"
+        "_locales/zh-CN/quadrupedcontrol-strings.json",
+        "README.md"
     ],
     "testFiles": [
         "test.ts"

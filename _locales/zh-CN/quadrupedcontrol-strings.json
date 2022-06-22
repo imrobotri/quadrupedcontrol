@@ -1,6 +1,6 @@
 {
-    "QuadrupedControl|block": "四足",
-    "QuadrupedControl.init|block": "初始化",
+    "QuadrupedControl|block":"四足",
+    "QuadrupedControl.init|block":"初始化",
     "Mov_dir.For|block": "前进",
     "Mov_dir.Bac|block": "后退",
     "Mov_dir.Turn_l|block": "左转",
@@ -13,5 +13,6 @@
     "Mov_ang.Look_u|block": "抬头",
     "Mov_ang.Yaw_l|block": "左扭",
     "Mov_ang.Yaw_r|block": "右扭"
+ 
 
 }
