@@ -1,5 +1,5 @@
 /**
- * Quadruped
+ * QuadrupedControl
  */
 //% weight= 0 color=#0abcff icon="\uf201" block="QuadrupedControl"
 //% groups='["Basic control","Return data","Additional steering gear control","Joint angle control"]'
@@ -58,7 +58,7 @@ namespace QuadrupedControl {
     */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_init block="init"
+    //% blockId=QuadrupedControl_init block="init"
     export function init(){
         SPI_Init()
     }
@@ -69,7 +69,7 @@ namespace QuadrupedControl {
     */
     //% group="Return data"
     //% blockGap=8
-    //% blockId=Quadruped_Status block="Status"
+    //% blockId=QuadrupedControl_Status block="Status"
     export function Status(): number {
         return ReturnData.Robot_mode
     }
@@ -80,7 +80,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Reset block="Reset"
+    //% blockId=QuadrupedControl_Reset block="Reset"
     export function Reset(): void {
         ControlData.ControlX = 0.00 //x_speed
         ControlData.ControlY = 0.00 //y_speed
@@ -99,7 +99,7 @@ namespace QuadrupedControl {
     //% group="Basic control"
     //% blockGap=8
     //% h.min=0.00 h.max=10.00
-    //% blockId=Quadruped_Height block="Height %h"
+    //% blockId=QuadrupedControl_Height block="Height %h"
     export function Height(h: number): void {
         ControlData.ControlZH = h * 0.1
         for (let i = 0; i < 10; i++) {
@@ -114,7 +114,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Start block="Start"
+    //% blockId=QuadrupedControl_Start block="Start"
     export function Start(): void {
         ControlData.GaitMode = 4
         ControlData.State = 1
@@ -136,7 +136,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Heartbeat block="Heartbeat"
+    //% blockId=QuadrupedControl_Heartbeat block="Heartbeat"
     export function Heartbeat(): void {
         SPI_Send()
         //serial.writeNumber(10)
@@ -148,7 +148,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Stand block="Stand"
+    //% blockId=QuadrupedControl_Stand block="Stand"
     export function Stand(): void {
         Standing()
     }
@@ -159,7 +159,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Stop block="Stop"
+    //% blockId=QuadrupedControl_Stop block="Stop"
     export function Stop(): void {
         if (ReturnData.Robot_mode == 0x04 || ReturnData.Robot_mode == 0x06) {
             Standing()
@@ -179,7 +179,7 @@ namespace QuadrupedControl {
      */
     //% group="Basic control"
     //% blockGap=8
-    //% blockId=Quadruped_Gait block="Gait | %g"
+    //% blockId=QuadrupedControl_Gait block="Gait | %g"
     export function Gait(g: gait): void {
         switch (g) {
             case gait.Trot:
@@ -255,7 +255,7 @@ namespace QuadrupedControl {
     //% blockGap=8
     //% Group.min=0 Group.max=10
     //% time1.min=0 time1.max=255
-    //% blockId=Quadruped_Action_groups block="Action group|%Group|state %sta"
+    //% blockId=QuadrupedControl_Action_groups block="Action group|%Group|state %sta"
     export function Action_groups(Group: number, sta: Actions): void {
         ControlData.ActionGroup = Group
         if (sta == Actions.Enable) {
@@ -275,7 +275,7 @@ namespace QuadrupedControl {
     //% blockGap=8
     //% speed1.min=0.00 speed1.max=10.00
     //% time1.min=0 time1.max=255
-    //% blockId=Quadruped_Control_s block="Control direction| %m|speed %speed1|time %time1"
+    //% blockId=QuadrupedControl_Control_s block="Control direction| %m|speed %speed1|time %time1"
     export function Control_s(m: Mov_dir, speed1: number, time1: number): void {
         let Sum_S = 0.00
         let time_ms = 0
@@ -314,7 +314,7 @@ namespace QuadrupedControl {
     //% blockGap=8
     //% angle1.min=0.00 angle1.max=10.00
     //% time1.min=0 time1.max=255
-    //% blockId=Quadruped_Control_a block="Control angle |%m|angle_size %angle1|time %time1"
+    //% blockId=QuadrupedControl_Control_a block="Control angle |%m|angle_size %angle1|time %time1"
     export function Control_a(m: Mov_ang, angle1: number, time1: number): void {
         let time_ms = 0
         let time_s = time1 * 1000

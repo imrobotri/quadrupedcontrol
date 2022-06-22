@@ -1,4 +1,5 @@
 {
-    "QuadrupedControl|block":"四足控制"    
+    "QuadrupedControl|block":"四足控制", 
+    "QuadrupedControl.init|block": "初始化"
 
 }
