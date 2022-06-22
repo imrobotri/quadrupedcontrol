@@ -2,10 +2,7 @@
     "name": "QuadrupedControl",
     "description": "",
     "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*",
-        "servo": "*"
+        "core": "*"
     },
     "files": [
         "main.blocks",
