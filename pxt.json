@@ -12,7 +12,7 @@
         "main.ts",
         "README.md",
         "QuadrupedControl.ts",
-        "_locales/zh-CN/QuadrupedControl-strings.json",
+   
         "Control.ts"
     ],
     "testFiles": [
