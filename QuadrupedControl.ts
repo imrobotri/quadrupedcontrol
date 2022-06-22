@@ -75,6 +75,19 @@ namespace QuadrupedControl {
     export function Status(): number {
         return ReturnData.Robot_mode
     }
+
+    //###Returns action status information||返回动作组状态信息
+    /**
+    * TODO:Returns the status information for the robot action group. (0x00 -- Idle, 0x01 -- In Progress, 0x02 -- End)
+    * TODO:返回机器人动作组的状态信息。（0x00--空闲,0x01--进行中,0x02--结束）
+    */
+    //% group="Return data"
+    //% blockGap=8
+    //% blockId=Quadruped_Action_Status block="Action_Status"
+    export function Action_Status(): number {
+        return ReturnData.M_Action_group_status;
+    }
+
     //####Reset||复位
     /**
      *TODO:The robot's movement speed and attitude angle are reset to 0.

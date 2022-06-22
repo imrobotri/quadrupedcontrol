@@ -1,6 +1,24 @@
 {
     "QuadrupedControl|block": "四足",
     "QuadrupedControl.init|block": "初始化",
+    "QuadrupedControl.Status|block": "返回状态信息",
+    "QuadrupedControl.Action_Status|block": "返回动作组状态信息",
+    "QuadrupedControl.Reset|block": "复位",
+    "QuadrupedControl.Stop|block": "停止",
+    "QuadrupedControl.Stand|block": "站立",
+    "QuadrupedControl.Start|block": "启动",
+    "QuadrupedControl.Heartbeat|block": "心跳",  
+    "QuadrupedControl.Height|block": "高度 %h",
+    "QuadrupedControl.Gait|block": "步态 %g",
+    "QuadrupedControl.Action_groups|block": "动作组 |%Group|状态 %sta",
+    "QuadrupedControl.Control_s|block": "控制 |%m| 速度 %speed1 |时间 %time1",
+    "QuadrupedControl.Control_a|block": "控制 | %m| 角度 %speed1 |时间 %time1",  
+    "gait.Crawl|block": "爬行",
+    "gait.Trot|block": "小跑",
+    "gait.S_TROT|block": "慢速对角步态",
+    "gait.F_TROT|block": "快速对角步态",
+    "Actions.Enable|block": "使能",
+    "Actions.Not_Enable|block": "不使能",
     "Mov_dir.For|block": "前进",
     "Mov_dir.Bac|block": "后退",
     "Mov_dir.Turn_l|block": "左转",
@@ -13,5 +31,6 @@
     "Mov_ang.Look_u|block": "抬头",
     "Mov_ang.Yaw_l|block": "左扭",
     "Mov_ang.Yaw_r|block": "右扭"
+    
 
 }
