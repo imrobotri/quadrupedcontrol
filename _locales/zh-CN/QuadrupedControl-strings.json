@@ -1,5 +1,5 @@
 {
-    "QuadrupedControl|block": "四足",
+    "QuadrupedControl|block": "四足控制",
     "QuadrupedControl.init|block": "初始化",
     "QuadrupedControl.Status|block": "返回状态信息",
     "QuadrupedControl.Action_Status|block": "返回动作组状态信息",
