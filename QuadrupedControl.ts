@@ -1,56 +1,58 @@
+enum gait {
+    //% block="Trot"
+    Trot,
+    //% block="Crawl"
+    Crawl,
+    //% block="S_TROT"
+    S_TROT,
+    //% block="F_TROT"
+    F_TROT
+}
+enum Actions {
+    //% block="Enable"
+    Enable = 1,
+    //% block="Not_Enable"
+    Not_Enable = 0
+
+}
+//############Movement direction||运动方向
+enum Mov_dir {
+    //% block="Forward"
+    For,
+    //% block="Backward"
+    Bac,
+    //% block="Turn_left"
+    Turn_l,
+    //% block="Turn_right"
+    Turn_r,
+    //% block="Shift_left"
+    Shift_l,
+    //% block="Shift_right"
+    Shift_r
+}
+//############Movement Angle||运动角度
+enum Mov_ang {
+    //% block="Left_swing"
+    L_swing,
+    //% block="Right_swing"
+    R_swing,
+    //% block="Look_down"
+    Look_d,
+    //% block="Look_up"
+    Look_u,
+    //% block="Yaw_left"
+    Yaw_l,
+    //% block="Yaw_right"
+    Yaw_r
+}
+
 /**
  * QuadrupedControl
  */
 //% weight= 0 color=#0abcff icon="\uf201" block="QuadrupedControl"
 //% groups='["Basic control","Return data"]'
 namespace QuadrupedControl {
-    enum gait {
-        //% block="Trot"
-        Trot,
-        //% block="Crawl"
-        Crawl,
-        //% block="S_TROT"
-        S_TROT,
-        //% block="F_TROT"
-        F_TROT
-    }
-    enum Actions {
-        //% block="Enable"
-        Enable = 1,
-        //% block="Not_Enable"
-        Not_Enable = 0
 
-    }
-    //############Movement direction||运动方向
-    enum Mov_dir {
-        //% block="Forward"
-        For,
-        //% block="Backward"
-        Bac,
-        //% block="Turn_left"
-        Turn_l,
-        //% block="Turn_right"
-        Turn_r,
-        //% block="Shift_left"
-        Shift_l,
-        //% block="Shift_right"
-        Shift_r
-    }
-    //############Movement Angle||运动角度
-    enum Mov_ang {
-        //% block="Left_swing"
-        L_swing,
-        //% block="Right_swing"
-        R_swing,
-        //% block="Look_down"
-        Look_d,
-        //% block="Look_up"
-        Look_u,
-        //% block="Yaw_left"
-        Yaw_l,
-        //% block="Yaw_right"
-        Yaw_r
-    }
 
     /**
     *TODO: Defines the initialization of the communication pins of the microbit and the adapter board, and requires initialization before invoking basic control, external servo control, and joint control. Microbit's LED dot matrix screen will not be available after initialization.
