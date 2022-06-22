@@ -12,7 +12,8 @@
         "main.ts",
         "README.md",
         "QuadrupedControl.ts",
-        "Control.ts"
+        "Control.ts",
+        "_locales/zh-CN/README.md"
     ],
     "testFiles": [
         "test.ts"
