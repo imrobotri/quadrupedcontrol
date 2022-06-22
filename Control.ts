@@ -11,7 +11,7 @@ let ControlData = {
     GaitMode: 0x00,
     ActionGroupStaus: 0x00,
     ActionGroup: 0x00,
-    ControlX: 0.1,
+    ControlX: 0,
     ControlY: 0,
     ControlRate: 0,
     ControlZ: 0,
@@ -92,7 +92,7 @@ function SPICom_Walk() {
     get_float_hex(ControlData.ControlZatt)
     ToSlaveBuf[SSLen - 1] = DaTail;
 
-    serial.writeBuffer(ToSlaveBuf)
+    //serial.writeBuffer(ToSlaveBuf)
 
 }
 
