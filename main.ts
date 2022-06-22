@@ -1,1 +1,1 @@
-
+QuadrupedControl.init()

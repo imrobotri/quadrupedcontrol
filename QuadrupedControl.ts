@@ -2,7 +2,7 @@
  * QuadrupedControl
  */
 //% weight= 0 color=#0abcff icon="\uf201" block="QuadrupedControl"
-//% groups='["Basic control","Return data","Additional steering gear control","Joint angle control"]'
+//% groups='["Basic control","Return data"]'
 namespace QuadrupedControl {
     enum gait {
         //% block="Trot"
