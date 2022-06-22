@@ -13,7 +13,7 @@
         "README.md",
         "QuadrupedControl.ts",
         "Control.ts",
-        "_locales/zh-CN/README.md"
+        "_locales/zh-CN/quadrupedcontrol-strings.json"
     ],
     "testFiles": [
         "test.ts"
