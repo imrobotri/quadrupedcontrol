@@ -271,7 +271,7 @@ namespace QuadrupedControl {
     * TODO:The robot moves forward and backward, left and right, and rotates left and right, and the corresponding speed control. Time is measured in seconds.
     * TODO:机器人前后、左右移动和左右旋转的动作选择，及对应的速度控制。时间以秒为单位。
     */
-    //% group="control"
+    //% group="Basic control"
     //% blockGap=8
     //% speed1.min=0.00 speed1.max=10.00
     //% time1.min=0 time1.max=255
@@ -310,7 +310,7 @@ namespace QuadrupedControl {
     * TODO:The robot swings left and right, heads up, bows down and twists left and right, and the corresponding angle control. Time is measured in seconds.
     * TODO:机器人左右摆动、抬头、低头和左右扭转的动作选择，及对应的角度控制。时间以秒为单位。
     */
-    //% group="control"
+    //% group="Basic control"
     //% blockGap=8
     //% angle1.min=0.00 angle1.max=10.00
     //% time1.min=0 time1.max=255
