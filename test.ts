@@ -1,1 +1,12 @@
 // 在此处测试；当此软件包作为插件使用时，将不会编译此软件包。
+QuadrupedControl.Control_a(Mov_ang.L_swing, 0, 0)
+QuadrupedControl.Control_s(Mov_dir.For, 0, 0)
+QuadrupedControl.Action_groups(0, Actions.Enable)
+QuadrupedControl.Gait(gait.Trot)
+QuadrupedControl.Stop()
+QuadrupedControl.Stand()
+QuadrupedControl.Heartbeat()
+QuadrupedControl.Start()
+QuadrupedControl.Height(0)
+QuadrupedControl.Reset()
+QuadrupedControl.init()
